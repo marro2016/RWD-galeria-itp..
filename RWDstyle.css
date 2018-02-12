@@ -1,0 +1,462 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Ubuntu');
+body {
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+header {
+  background-color: #313234;
+  height: 50px;
+  background-color: rgba(0.0.0 0.5)
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header > nav img {
+  padding: 10px 0;
+}
+
+header > nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header > nav ul > li {
+  display: inline-block;
+}
+
+header > nav ul > li > a {
+  line-height: 50px;
+  display: block;
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header > nav ul > li > a:hover {
+  background: #ccc;
+}
+
+.hero {
+  background-image: url("https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?h=350&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.slogan {
+  float: right;
+  max-width: 800px;
+  width: 500px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  margin-top: 40vh;
+  padding: 20px;
+  box-shadow: 10px 10px 10px red;
+}
+
+.hero .slogan h1,
+h2 {
+  line-height: 0.1;
+}
+
+.hero .slogan h2 {
+  color: white;
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+section>.container {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.awesome .icon-btn {
+  height: 120px;
+  width: 120px;
+  color: #FFF;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 10%;
+  background-color: #313332;
+  cursor: pointer;
+  font-size: 70px;
+  padding: 10px;
+  text-align: center;
+}
+
+.awesome .icon-btn p {
+  color: black;
+  text-align: center;
+  display: inline-block;
+}
+
+.awesome .col-4:hover .icon-btn {
+  background-color: red;
+  transition: .2s;
+}
+
+.awesome .col-4:hover h1 {
+  color: red;
+  transition: .2s;
+}
+
+.awesome .col-4:hover p {
+  color: red;
+  transition: .2s;
+}
+
+.awesome .col-12 {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  display: block;
+}
+
+.featured {
+  text-align: center;
+}
+
+.featured h1 {
+  font-size: 70px;
+  color: black;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.featured h1:hover {
+  color: red;
+  transition: .2s;
+}
+
+.featured p {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.gallery [class*="col-"] {
+  padding: 10;
+}
+
+.gallery img {
+  width: 100%;
+  height: 150px;
+  float: left;
+}
+
+.gallery .col {
+  position: relative;
+}
+
+.gallery .col .fa {
+  font-size: 40px;
+}
+
+.gallery .col .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, .5);
+  transform: scale(0);
+  color: #fff;
+  transition: all ease-in-out .3s;
+  padding-top: 90px;
+}
+
+.gallery .col:hover .layer {
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.team img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  transition-property: width;
+}
+
+.team img:hover {
+  cursor: pointer;
+  width: 200px;
+}
+
+.picture {
+  background-color: black;
+  height: 55vh;
+  margin: 0 auto;
+}
+
+.picture img {
+  height: 55vh;
+  float: left;
+}
+
+.picture p {
+  color: white;
+  padding-top: 15px;
+  text-align: left;
+}
+
+.picture h2 {
+  color: white;
+  padding-top: 15px;
+  box-shadow: 10px 10px 10px red;
+}
+
+.numbers h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0.5;
+  padding: 10px;
+}
+
+.numbers h3 {
+  font-size: 20px;
+  color: #0cc5e1;
+  line-height: 0.5;
+}
+
+.footer1 {
+  background-color: #313332;
+  color: white;
+}
+
+.footer1 h1 {
+  font-size: 25px;
+  color: red;
+  padding: 30px;
+  text-align: left;
+}
+
+.footer1 p {
+  padding: 40px;
+  text-align: justify;
+}
+
+.footer2 {
+  background-color: #212020;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.footer2 h1 {
+  font-size: 15px;
+}
+
+footer .line {
+  background: white;
+  height: 2px;
+  width: 50px;
+  display: inline-block;
+  line-height: 10px;
+  margin: 10px auto;
+}
+
+.social-media button {
+  background-color: #00C7E8;
+  border: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.social-media .fa {
+  font-size: 20px;
+}
+
+.social-media button:hover {
+  background-color: white;
+}
+
+.social-media button:hover .fa {
+  color: #00C7E8;
+}
+
+@media (max-width: 767px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  header > nav ul {
+    float: none;
+  }
+  header > nav ul > li {
+    display: inline;
+  }
+  header > nav ul > li > a {
+    color: red;
+  }
+  .slogan {
+    float: none;
+    display: block;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 300px;
+  }
+  .awesome .icon-btn {
+    color: orange;
+    text-align: center;
+    display: inline;
+  }
+  .gallery img {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  .picture img {
+    float: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
